@@ -4,7 +4,7 @@
 
 A továbbiakban a gyakorlaton megoldott feladatok megtalálhatók a
 
-https://github.com/ficsoriit/OOP2021Gyak-BIU.git
+https://github.com/ficsoriit/OOP2021Gyak-BI2.git
 
 repository-ban, onnan letölthetők.
 
