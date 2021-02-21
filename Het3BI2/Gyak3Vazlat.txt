@@ -1,0 +1,14 @@
+3.1 feladat megoldása (spagetti kód lesz!)
+
+3.2 feladat megoldása - forech ciklus használata
+
+A továbbiakban a gyakorlaton megoldott feladatok megtalálhatók a
+
+https://github.com/ficsoriit/OOP2021Gyak-BIU.git
+
+repository-ban, onnan letölthetők.
+
+
+Otthoni feladat:
+giteclipse.pdf elolvasása - jövő héten használni kell a benne foglaltakat.
+
