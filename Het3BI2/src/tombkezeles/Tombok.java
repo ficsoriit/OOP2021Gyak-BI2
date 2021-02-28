@@ -48,6 +48,7 @@ public class Tombok {
 		}
 		int[] tomb = new int[tombmeret];
 		feltolt(tomb);
+		kiir(tomb);
 		
 		
 
