@@ -38,6 +38,16 @@ public class Tombok {
 		*/
 		System.out.println();
 		}
+	
+	static int legnagyobbParos(int[] tomb) {
+		int max = -1;
+		for(int elem : tomb) {
+			if (elem % 2 == 0 && elem>max) {
+				max = elem;
+			}
+		}
+		return max;
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -49,9 +59,13 @@ public class Tombok {
 		int[] tomb = new int[tombmeret];
 		feltolt(tomb);
 		kiir(tomb);
+		int paros = legnagyobbParos(tomb);
+		if (paros == -1) {
+			System.out.println("Nincs páros szám!");	
+		} else {
+			System.out.println("A legnagyobb páros szám: " + paros);
+		}
 		
-		
-
 	}
 
 }
