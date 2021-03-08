@@ -24,8 +24,17 @@ public class SzoFeltoltes {
 	static ArrayList<String> szavakatELtarol(Scanner input) {
 		ArrayList<String> szavak = new ArrayList<String>();
 		String szo;
+		boolean beszuras;
 		while ( !((szo = kovetkezoSzo(input)).equals(""))) { // Addig, amíg van input
-			szavak.add(szo);
+			beszuras = false;
+			for (int i=0; i<szavak.size(); i++) {
+				if (szavak.get(i).compareTo(szo) > 0) {
+					szavak.add(i, szo);
+					beszuras = true;
+					break;
+				}
+			}
+			if (!beszuras) szavak.add(szo);
 		}
 		return szavak;
 	}
