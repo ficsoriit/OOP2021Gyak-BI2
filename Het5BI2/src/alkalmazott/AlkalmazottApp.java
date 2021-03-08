@@ -1,8 +1,6 @@
 package alkalmazott;
-/* 4.1 a feladat
- * És itt most ünnepélyesen megígértjük, hogy SOHA TÖBBET
- * ilyen osztály 
- * 
+/* 4.1 b feladat
+ * Ez már elfogadható
  * 
  */
 

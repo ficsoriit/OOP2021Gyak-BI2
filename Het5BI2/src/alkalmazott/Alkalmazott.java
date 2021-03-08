@@ -1,5 +1,8 @@
 package alkalmazott;
 
+/* 4.1 b
+ * 
+ */
 public class Alkalmazott {
 	private final String nev;
 	private int fizetes;
