@@ -1,20 +1,28 @@
 package alkalmazott;
-/* 4.1 a feladat
- * És itt most ünnepélyesen megígértjük, hogy SOHA TÖBBET
- * ilyen osztály NEM írunk!
- * Számos OO alapetvet sért!
- * 
- */
-
 
 public class Alkalmazott {
-	String nev;
-	int fizetes;
-	
-	void fizetestNovel(double szazalek) {
+	private final String nev;
+	private int fizetes;
+		
+	public Alkalmazott(String nev, int fizetes) {
+		super();
+		this.nev = nev;
+		this.fizetes = fizetes;
+	}
+	public int getFizetes() {
+		return fizetes;
+	}
+	public void setFizetes(int fizetes) {
+		this.fizetes = fizetes;
+	}
+	public String getNev() {
+		return nev;
+	}
+	public void fizetestNovel(double szazalek) {
 		fizetes = (int)(fizetes + fizetes*szazalek/100); 
 	}
-	String kiirInfo() {
+	
+	public String kiirInfo() {
 		return nev + ": " + fizetes;
 	}
 
