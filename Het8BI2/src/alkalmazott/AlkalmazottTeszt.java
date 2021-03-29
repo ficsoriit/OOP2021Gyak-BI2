@@ -1,5 +1,6 @@
 package alkalmazott;
 
+import java.time.LocalDate;
 import java.util.Random;
 
 public class AlkalmazottTeszt {
@@ -16,8 +17,10 @@ public class AlkalmazottTeszt {
 	
 	private void feltolt() {
 		Random r = new Random();
+		LocalDate sz;
 		for (int i=0; i<alkalmazottakSzama; i++) {
-			alkalmazottak[i] = new Alkalmazott("Bela" + (i+1), r.nextInt(41) + 25);
+			sz = LocalDate.of(1972, 3, 15);
+			alkalmazottak[i] = new Alkalmazott("Bela" + (i+1), sz);
 		}
 	}
 	
@@ -25,12 +28,6 @@ public class AlkalmazottTeszt {
 		for (Alkalmazott elem : alkalmazottak) {
 			System.out.println(elem);
 		}
-	}
-	
-	public void modositottLista(int ujKorhatar) {
-		Alkalmazott.setNyugdijKorhatar(ujKorhatar);
-		System.out.println("Lista a korhatár megválttatása után");
-		alkamazottLista();
 	}
 	
 	public void marCsakOtEv() {
