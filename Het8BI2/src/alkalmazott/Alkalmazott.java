@@ -17,7 +17,6 @@ public class Alkalmazott {
 	}
 	
 	
-
 	public Alkalmazott(String nev, LocalDate szuletett) {
 		this(nev, szuletett, 10000*(LocalDate.now().getYear() - szuletett.getYear()));
 	}
